@@ -36,7 +36,7 @@
   color: #394046;
 }
 .moto-color3 {
-  color: #3165d9;
+  color: #000000;
 }
 .moto-color3_1 {
   color: #214fb5;
@@ -45,7 +45,7 @@
   color: #2558ca;
 }
 .moto-color3_3 {
-  color: #3165d9;
+  color: #000000;
 }
 .moto-color3_4 {
   color: #4675dd;
@@ -458,13 +458,16 @@ h4 {
   }
 }
 .moto-container_header_5e1049441 {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 00px;
+  padding-bottom: 00px;
   transition-duration: 0.4s;
   transition-property: background-color, border-color;
 }
 .moto-container_header_5e1049441.moto-sticky__attached {
-  background-color: #23272b;
+  background-image: url(./images/mt-0960-our-company-header-bg.jpg);
+  background-position:top;
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 .moto-text_212 {
   font-weight: 700;
