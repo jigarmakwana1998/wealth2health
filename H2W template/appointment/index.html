@@ -177,8 +177,7 @@
                                                         decision-making.</p>
                                                 </div>
                                             </div>
-                                            <div
-                                                class="moto-widget moto-widget-contact_form moto-preset-default moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
+                                            <!-- <div class="moto-widget moto-widget-contact_form moto-preset-default moto-spacing-top-small moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
                                                 <div ng-controller="widget.ContactForm.Controller"
                                                     ng-init="hash = '2@eyJoIjoiZWRJU3V1aEw0NGV0a1BvYVRpRkRVbnFtbWJiQjg4a1dhSmFlcHo2M1wvVk09IiwiaSI6IkxXakl6Q0JSQkgrNGZBb0YxZE5PQkE9PSIsInYiOiJsMEVnNDJsc21FRlVDR1ErUEV3bVl1amRKNklBNk1XYU05VDJlQWIwcVNIb2pkcXRZSzIxeDcyTk1qKzlQbmt2MFRPVEhEakdXcTdhVTBNYUwyUXkrUT09In0=';actionAfterSubmission={&quot;action&quot;:&quot;none&quot;,&quot;url&quot;:&quot;&quot;,&quot;target&quot;:&quot;_self&quot;,&quot;id&quot;:&quot;&quot;};resetAfterSubmission=false">
                                                     <form class="moto-widget-contact_form-form" role="form"
@@ -222,10 +221,10 @@
 
                                                         <div class="moto-widget-contact_form-group">
                                                             <label for="field_phone_wid__contact_form__5abdcf223ded3"
-                                                                class="moto-widget-contact_form-label">Date</label>
+                                                                class="moto-widget-contact_form-label">Phone Number</label>
                                                             <input type="text"
                                                                 class="moto-widget-contact_form-field moto-widget-contact_form-input"
-                                                                placeholder="Date "
+                                                                placeholder="Phone Number"
                                                                 ng-model-options="{ updateOn: 'blur' }" name="phone"
                                                                 id="field_phone_wid__contact_form__5abdcf223ded3"
                                                                 ng-model="message.phone" />
@@ -238,11 +237,10 @@
 
                                                         <div class="moto-widget-contact_form-group">
                                                             <label for="field_subject_wid__contact_form__5abdcf223ded3"
-                                                                class="moto-widget-contact_form-label">Your
-                                                                Subject</label>
+                                                                class="moto-widget-contact_form-label">Address</label>
                                                             <input type="text"
                                                                 class="moto-widget-contact_form-field moto-widget-contact_form-input"
-                                                                placeholder="Your Subject "
+                                                                placeholder="Address"
                                                                 ng-model-options="{ updateOn: 'blur' }" name="subject"
                                                                 id="field_subject_wid__contact_form__5abdcf223ded3"
                                                                 ng-model="message.subject" />
@@ -252,22 +250,67 @@
                                                                 is required</span>
                                                         </div>
 
-
                                                         <div class="moto-widget-contact_form-group">
-                                                            <label for="field_message_wid__contact_form__5abdcf223ded3"
-                                                                class="moto-widget-contact_form-label">Message</label>
-                                                            <textarea
-                                                                class="moto-widget-contact_form-field moto-widget-contact_form-textarea"
-                                                                rows="3" placeholder="Message *"
-                                                                ng-blur="validate('message')" required
-                                                                ng-model-options="{ updateOn: 'blur' }" name="message"
-                                                                id="field_message_wid__contact_form__5abdcf223ded3"
-                                                                ng-model="message.message"></textarea>
+                                                            <label for="field_subject_wid__contact_form__5abdcf223ded3"
+                                                                class="moto-widget-contact_form-label">2 wheeler</label>
+                                                            <input type="text"
+                                                                class="moto-widget-contact_form-field moto-widget-contact_form-input"
+                                                                placeholder="2 wheeler"
+                                                                ng-model-options="{ updateOn: 'blur' }" name="subject"
+                                                                id="field_subject_wid__contact_form__5abdcf223ded3"
+                                                                ng-model="message.subject" />
                                                             <span class="moto-widget-contact_form-field-error ng-cloak"
                                                                 ng-cloak
-                                                                ng-show="contactForm.message.$invalid && !contactForm.message.$pristine">Field
+                                                                ng-show="contactForm.subject.$invalid && !contactForm.subject.$pristine && !contactForm.subject.emailInvalid">Field
                                                                 is required</span>
                                                         </div>
+                                                        
+	<table>
+		<tr>
+			<th>                </th>
+			<th> Date of expiry </th>
+			<th> Client Insurance </th>
+			<th> Paid amount </th>
+        </tr>
+        
+        <tr>
+			<th> 2 wheeler </th>
+			<td>  </td>
+			<td>			</td>
+			<td>			</td>
+		</tr>
+		
+		<tr>
+			<th> 4 wheeler </th>
+			<td>            </td>
+			<td>			</td>
+			<td>			</td>
+		</tr>
+		
+		<tr>
+			<th> Mediclaim </th>
+			<td>            </td>
+			<td>			</td>
+			<td>			</td>
+			
+		</tr>
+		
+		<tr>
+			<th> Fire Insurance </th>
+			<td>           		</td>
+			<td>				</td>
+			<td>				</td>
+		</tr>
+		
+		<tr>
+			<th> Property insurance </th>
+			<td>           			</td>
+			<td>					</td>
+			<td>					</td>
+		</tr>
+	
+	</table><br><br>
+
                                                         <div class="moto-widget-contact_form-success ng-cloak" ng-cloak
                                                             ng-show="showSuccessMessage">
                                                             Your message was sent successfully
@@ -283,14 +326,111 @@
                                                                     class="moto-widget-button-link moto-size-large"
                                                                     data-size="large"><span
                                                                         class="fa moto-widget-theme-icon"></span><span
-                                                                        class="moto-widget-button-label">Make an
-                                                                        Appointment</span></a>
+                                                                        class="moto-widget-button-label">Submit</span></a>
                                                             </div>
                                                             <button type="submit" class="hidden"></button>
                                                         </div>
                                                     </form>
                                                 </div>
+                                            </div> -->
+                                            <style>
+                                                input[type=text],
+                                                select {
+                                                    width: 100%;
+                                                    padding: 12px 20px;
+                                                    margin: 8px 0;
+                                                    display: inline-block;
+                                                    border: 1px solid #ccc;
+                                                    border-radius: 4px;
+                                                    box-sizing: border-box;
+                                                }
+
+                                                input[type=submit] {
+                                                    width: 100%;
+                                                    background-color: #4CAF50;
+                                                    color: white;
+                                                    padding: 14px 20px;
+                                                    margin: 8px 0;
+                                                    border: none;
+                                                    border-radius: 4px;
+                                                    cursor: pointer;
+                                                }
+
+                                                input[type=submit]:hover {
+                                                    background-color: #45a049;
+                                                }
+                                            </style>
+                                            <form action="">
+                                                <label for="fname">First Name</label>
+                                                <input type="text" id="fname" name="firstname"
+                                                    placeholder="Your name..">
+
+                                                <label for="lname">Last Name</label>
+                                                <input type="text" id="lname" name="lastname"
+                                                    placeholder="Your last name..">
+
+                                                <label for="country">Country</label>
+                                                <select id="country" name="country">
+                                                    <option value="australia">Australia</option>
+                                                    <option value="canada">Canada</option>
+                                                    <option value="usa">USA</option>
+                                                </select>
+
+                                                <input type="submit" value="Submit">
+                                            </form>
+                                            Name: <input type="text" id="name" name="name" value=""><br>
+                                            E-mail: <input type="text" id="email" name="email" value=""><br>
+                                            Phone Number: <input type="number" id="phone" name="phone" value=""><br>
+                                            Address: <input type="text" id="address" name="address" value=""><br>
+
+                                            <div class="row">
+                                                2 wheeler: <input type="text" id="dof_2" name="name" placehoder="DOF"
+                                                    value=""><input type="text" id="ci_2" name="name"
+                                                    placehoder="Client Insurance" value=""><input type="number"
+                                                    id="pa_2" name="name" placehoder="Paid Amount" value="">
                                             </div>
+                                            <div class="row">
+                                                4 wheeler: <input type="text" id="dof_4" name="name" placehoder="DOF"
+                                                    value=""><input type="text" id="ci_f" name="name"
+                                                    placehoder="Client Insurance" value=""><input type="number"
+                                                    id="pa_4" name="name" placehoder="Paid Amount" value="">
+                                            </div>
+                                            <div class="row">
+                                                Mediclaim: <input type="text" id="dof_m" name="name" placehoder="DOF"
+                                                    value=""><input type="text" id="ci_m" name="name"
+                                                    placehoder="Client Insurance" value=""><input type="number"
+                                                    id="pa_m" name="name" placehoder="Paid Amount" value="">
+                                            </div>
+                                            <div class="row">
+                                                Fire Insurance: <input type="text" id="dof_f" name="name"
+                                                    placehoder="DOF" value=""><input type="text" id="ci_f" name="name"
+                                                    placehoder="Client Insurance" value=""><input type="number"
+                                                    id="pa_f" name="name" placehoder="Paid Amount" value="">
+                                            </div>
+                                            <div class="row">
+                                                Property Insurance: <input type="text" id="dof_p" name="name"
+                                                    placehoder="DOF" value=""><input type="text" id="ci_p" name="name"
+                                                    placehoder="Client Insurance" value=""><input type="number"
+                                                    id="pa_p" name="name" placehoder="Paid Amount" value="">
+                                            </div>
+
+
+
+                                            <button onclick="myFunction()">Try it</button>
+
+
+                                            <script>
+                                                function myFunction() {
+                                                    var x = document.getElementById("name").value;
+                                                    var y = document.getElementById("email").value;
+                                                    var z = document.getElementById("phone").value;
+                                                    var w = document.getElementById("address").value;
+                                                    console.log(x)
+                                                    console.log(y)
+                                                    console.log(z)
+                                                    console.log(w)
+                                                }
+                                            </script>
                                         </div>
                                         <div class="moto-cell col-sm-5 moto-widget moto-widget-row__column"></div>
                                     </div>
