@@ -408,7 +408,7 @@ h4 {
   transition-property: background-color, border-color, ba;
 }
 .moto-container_header_5e104a8b2.moto-sticky__attached {
-  background-image: url(../images/mt-0960-our-company-header-bg.jpg);
+  background-image: url(../uploads/2017/05/mt-0960-our-company-header-bg.jpg);
   background-position:top;
   background-repeat:no-repeat;
   background-size:cover;
@@ -581,7 +581,7 @@ h4 {
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-image: url(./imagess/mt-0960-system-page-bg.jpg);
+  background-image: url(../uploads/2017/05/mt-0960-system-page-bg.jpg);
 }
 .moto-background {
   background-color: #ffffff;
