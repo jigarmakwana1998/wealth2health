@@ -186,7 +186,7 @@
                                             <div
                                                 class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
                                                 <div class="moto-widget-text-content moto-widget-text-editable">
-                                                   <h2 class="moto-text_system_8"> TRAVEL INSURANCE </h2>
+                                                    <h2>TRAVEL INSURANCE </h2>
                                                     <style>
                                                         input[type=text],
                                                         input[type=number],
@@ -199,7 +199,7 @@
                                                             border-radius: 4px;
                                                             box-sizing: border-box;
                                                         }
-        
+
                                                         input[type=submit] {
                                                             width: 100%;
                                                             background-color: #4CAF50;
@@ -210,102 +210,144 @@
                                                             border-radius: 4px;
                                                             cursor: pointer;
                                                         }
-        
+
                                                         input[type=submit]:hover {
                                                             background-color: #45a049;
                                                         }
                                                     </style>
                                                     <form id="form_1">
-                                                        <label for="name">NAME OF PROPOSER:</label>
+                                                       <h3> <label for="name">NAME OF PROPOSER:</label></h3>
                                                         <input type="text" id="name" name="name" placeholder=" NAME">
-        
-                                                        <label for="email">DATE OF BIRTH</label>
-                                                        <input type="text" id="email" name="email" placeholder="DD/MM/YYYY">
-        
-                                                        <label for="trip">CORR.ADD: BUILDING NAME/BLOCK NUMBER:</label>
+
+                                                        <label for="Date of Birth"> 
+                                                           <h4> DATE OF BIRTH:</h4>
+                                                            <input type="date" name="date"> 
+                                                        </label> <br>
+                                                        
+                                                        <h3>GENDER</h3>
+                                                        <input type="radio" id="male" name="gender" value="male">
+                                                        <label for="male">Male</label><br>
+                                                        <input type="radio" id="female" name="gender" value="female">
+                                                        <label for="female">Female</label><br>
+                                                        <input type="radio" id="other" name="gender" value="other">
+                                                        <label for="other">Other</label><br>
+
+                                                       <h3> <label for="trip">CORR.ADD: BUILDING NAME/BLOCK NUMBER:</label></h3>
                                                         <input type="text" id="address" name="ADDRESS"
                                                             placeholder="..........">
-        
-                                                        <label for="email">STREET NAME:</label>
+
+                                                       <h3> <label for="email">STREET NAME:</label></h3>
                                                         <input type="text" id="ref no" name="street name"
                                                             placeholder="street name">
-                                                        
-                                                            <label for="name">city:</label>
-                                                            <input type="text" id="name" name="name" placeholder="Your city name">
+                                                        <div class="row">
+                                                            <div class="column">
+                                                               <h3> <label for="name">city: </label></h3>
+                                                                <input type="text" id="name" name="name"
+                                                                    placeholder="Your city name">
+                                                            </div>
 
-                                                            <label for="name">STATE:</label>
-                                                            <input type="text" id="text" name="state" placeholder="Your state name">
+                                                            <div class="column">
+                                                                <h3><label for="name">STATE:</label></h3>
+                                                                <input type="text" id="state" name="state"
+                                                                    placeholder="Your state name">
+                                                            </div>
 
-                                                            <label for="name">PINCODE:</label>
-                                                            <input type="text" id="PIN CODE" name="PIN CODE " placeholder="Your PINCODE NUMBER">
+                                                            <div class="column">
+                                                               <h3> <label for="name">PINCODE:</label></h3>
+                                                                <input type="integer" id="pincode" name="PIN CODE "
+                                                                    placeholder="Your PINCODE NUMBER">
+                                                            </div>
 
-                                                            <label for="name">PHONE NUMBER: (RES)</label>
-                                                            <input type="text" id="name" name="name" placeholder="Your PHONE NUMBER">
-
-                                                            <label for="name">EMAIL:</label>
-                                                            <input type="text" id="email" name="email" placeholder="Your email address">
-
-                                                            <label for="name">PAN NUMBER:</label>
-                                                            <input type="text" id="name" name="NUMBER" placeholder="Your PAN NUMBER">
-
-                                                            <label for="name">PASSPORT NUMBER:</label>
-                                                            <input type="text" id="name" name="name" placeholder="Your passport number">
-
-                                                            <p class="moto-text_system_8">*premium details*</p>
-
-                                                            <label for="name">AMOUNT RUPEES</label>
-                                                            <input type="text" id="name" name="name" placeholder="Your AMOUNT RUPEES">
-
-                                                            <p class="moto-text_system_8">*Bank Account Details*</p>
-
-                                                            <label for="name">NAME OF BANK ACCOUNT HOLDER:</label>
-                                                            <input type="text" id="name" name="name" placeholder="Your bank account number"> 
-                                                            
-                                                            <label for="name">NAME OF BANK:</label>
-                                                            <input type="text" id="name" name="name" placeholder="Your BANK NAME">
-
-                                                            <label for="name">BRANCH</label>
-                                                            <input type="text" id="name" name="name" placeholder="Your  BRANCH NAME">
-
-                                                            <label for="name">IFSC CODE:</label>
-                                                            <input type="text" id="name" name="name" placeholder="11 CHARACHTER CODE APPEEARING ON YOUR CHEQUE LEAF">
-
-                                                            <p class="moto-text_system_8">*PAYMENT DETAILS*</p>
-
-                                                            <label for="name">CHEQUE NUMBER</label>
-                                                            <input type="text" id="name" name="name" placeholder="LAST 5 DIGIT NUMBER">
-
-                                                            <label for="name">AMOUNT </label>
-                                                            <input type="text" id="name" name="name" placeholder="Your AMOUNT RUPEES">
-
-                                                            <label for="name">BANK NAME</label>
-                                                            <input type="text" id="name" name="name" placeholder="Your  BRANCH NAME">
-                                                            
+                                                            <div class="column">
+                                                               <h3> <label for="name">PHONE NUMBER: (RES)</label></h3>
+                                                                <input type="text" id="name" name="name"
+                                                                    placeholder="Your PHONE NUMBER">
+                                                            </div>
                                                         </div>
-        
-                                                        <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
-                                                        <button type="submit" onclick="myFunction()">Submit</button>
-                                                    </form><br>
-                                                    <script>
-                                                        function myFunction() {
-                                                            var x = document.getElementById("name");
-                                                            var y = document.getElementById("email").value;
-                                                            var z = document.getElementById("phone").value;
-                                                            var w = document.getElementById("address").value;
-                                                            var forms = document.getElementById("form_1");
-                                                                console.log("Saving value", forms.elements[1].value);
-                                                                console.log(x.value);
-                                                        }
-                                                    </script><br>
 
-                                                    <div
+                                                       <h3> <label for="name">EMAIL:</label></h3>
+                                                        <input type="text" id="email" name="email"
+                                                            placeholder="Your email address">
+                                                        
+                                                        <div class="row">
+                                                            <div class="column">
+                                                       <h3> <label for="name">PAN NUMBER:</label></h3>
+                                                        <input type="text" id="name" name="NUMBER"
+                                                            placeholder="Your PAN NUMBER">
+                                                            </div>
+                                                        <div class="column">
+                                                       <h3> <label for="name">PASSPORT NUMBER:</label></h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="Your passport number">
+                                                            </div>
+                                                            </div><br>
+
+                                                       <h2> <p class="moto-text_system_8">*premium details*</p></h2>
+
+                                                       <h3> <label for="name">AMOUNT RUPEES</label></h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="Your AMOUNT RUPEES">
+
+                                                       <h2> <p class="moto-text_system_8">*Bank Account Details*</p></h2>
+
+                                                       <h3> <label for="name">NAME OF BANK ACCOUNT HOLDER:</label></h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="Your bank account number">
+
+                                                        <h3><label for="name">NAME OF BANK:</label></h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="Your BANK NAME">
+
+                                                        <h3><label for="name">BRANCH</label></h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="Your  BRANCH NAME">
+                                                        <div class="row">
+                                                            <div class="column">
+                                                       <h3> <label for="name">IFSC CODE:</label></h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="11 CHARACHTER CODE APPEEARING ON YOUR CHEQUE LEAF">
+                                                        </div>
+                                                        </div>
+                                                       <h2> <p class="moto-text_system_8">*PAYMENT DETAILS*</p></h2>
+
+                                                       <h3> <label for="name">CHEQUE NUMBER</label></h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="LAST 5 DIGIT NUMBER">
+
+                                                       <h3> <label for="name">AMOUNT </label></h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="Your AMOUNT RUPEES">
+
+                                                       <h3> <label for="name">BANK NAME</label></h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="Your  BRANCH NAME">
+
+                                                </div>
+
+                                                <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
+                                                <button type="submit" onclick="myFunction()">Submit</button>
+                                                </form><br>
+                                                <script>
+                                                    function myFunction() {
+                                                        var x = document.getElementById("name");
+                                                        var y = document.getElementById("email").value;
+                                                        var z = document.getElementById("phone").value;
+                                                        var w = document.getElementById("address").value;
+                                                        var forms = document.getElementById("form_1");
+                                                        console.log("Saving value", forms.elements[1].value);
+                                                        console.log(x.value);
+                                                    }
+                                                </script><br>
+
+                                                <div
                                                     class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
                                                     <div class="moto-widget-text-content moto-widget-text-editable">
-                                                        <h2 class="moto-text_system_8">COMMERCIAL VEHICLE INSURANCE </h2><br>
+                                                        <h2 class="moto-text_system_8">COMMERCIAL VEHICLE INSURANCE
+                                                        </h2><br>
 
                                                         <h3 class="moto-text_system_8"> *CUSTOMER INFORMATIONU* </h3>
 
-                                                        
+
                                                         <style>
                                                             input[type=text],
                                                             input[type=number],
@@ -318,7 +360,7 @@
                                                                 border-radius: 4px;
                                                                 box-sizing: border-box;
                                                             }
-            
+
                                                             input[type=submit] {
                                                                 width: 100%;
                                                                 background-color: #4CAF50;
@@ -329,131 +371,158 @@
                                                                 border-radius: 4px;
                                                                 cursor: pointer;
                                                             }
-            
+
                                                             input[type=submit]:hover {
                                                                 background-color: #45a049;
                                                             }
                                                         </style>
                                                         <form id="form_1">
                                                             <label for="name">NAME OF INSURED:</label>
-                                                            <input type="text" id="name" name="name" placeholder=" NAME">
-            
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder=" NAME">
+
                                                             <label for="email">DATE OF BIRTH</label>
-                                                            <input type="text" id="email" name="email" placeholder="DD/MM/YYYY">
-            
-                                                            <label for="trip">CORR.ADD: BUILDING NAME/BLOCK NUMBER:</label>
+                                                            <input type="text" id="email" name="email"
+                                                                placeholder="DD/MM/YYYY">
+
+                                                            <label for="trip">CORR.ADD: BUILDING NAME/BLOCK
+                                                                NUMBER:</label>
                                                             <input type="text" id="address" name="ADDRESS"
                                                                 placeholder="..........">
-            
+
                                                             <label for="email">STREET NAME:</label>
                                                             <input type="text" id="ref no" name="street name"
                                                                 placeholder="street name">
-                                                            
-                                                                <label for="name">city:</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your city name">
-    
-                                                                <label for="name">STATE:</label>
-                                                                <input type="text" id="text" name="state" placeholder="Your state name">
-    
-                                                                <label for="name">PINCODE:</label>
-                                                                <input type="text" id="PIN CODE" name="PIN CODE " placeholder="Your PINCODE NUMBER">
-    
-                                                                <label for="name">PHONE NUMBER: (RES)</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your PHONE NUMBER">
-    
-                                                                <label for="name">EMAIL:</label>
-                                                                <input type="text" id="email" name="email" placeholder="Your email address">
-    
-                                                                <label for="name">PAN NUMBER:</label>
-                                                                <input type="text" id="name" name="NUMBER" placeholder="Your PAN NUMBER">
-    
-    
-                                                                <p class="moto-text_system_8">*premium details*</p>
-    
-                                                                <label for="name">AMOUNT RUPEES</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your AMOUNT RUPEES">
-    
-                                                                <p class="moto-text_system_8">*Bank Account Details*</p>
-    
-                                                                <label for="name">NAME OF BANK ACCOUNT HOLDER:</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your bank account number"> 
-                                                                
-                                                                <label for="name">NAME OF BANK:</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your BANK NAME">
-    
-                                                                <label for="name">BRANCH</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your  BRANCH NAME">
-    
-                                                                <label for="name">IFSC CODE:</label>
-                                                                <input type="text" id="name" name="name" placeholder="11 CHARACHTER CODE APPEEARING ON YOUR CHEQUE LEAF">
-    
-                                                                <p class="moto-text_system_8">*PAYMENT DETAILS*</p>
-    
-                                                                <label for="name">CHEQUE NUMBER</label>
-                                                                <input type="text" id="name" name="name" placeholder="LAST 5 DIGIT NUMBER">
-    
-                                                                <label for="name">AMOUNT </label>
-                                                                <input type="text" id="name" name="name" placeholder="Your AMOUNT RUPEES">
-    
-                                                                <label for="name">BANK NAME</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your  BRANCH NAME">
 
-                                                                <p class="moto-text_system_8">*RISK INFORMATION*</p>
-                                                              <label for="name">VEHICLE MANUFACURE</label>
-                                                              <input type="text" id="name" name="name" placeholder=" ..">
+                                                            <label for="name">city:</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your city name">
 
-                                                              <label for="name">VEHICLE MODEL</label>
-                                                              <input type="text" id="name" name="name" placeholder="Your VEHICLE MODEL">
+                                                            <label for="name">STATE:</label>
+                                                            <input type="text" id="text" name="state"
+                                                                placeholder="Your state name">
 
-                                                              <label for="name">ENGINE NO</label>
-                                                              <input type="text" id="name" name="name" placeholder="Your ENGINE NO">
+                                                            <label for="name">PINCODE:</label>
+                                                            <input type="text" id="PIN CODE" name="PIN CODE "
+                                                                placeholder="Your PINCODE NUMBER">
 
-                                                               <label for="name">CHASSIS N0</label>
-                                                                <input type="text" id="name" name="name" placeholder="YouR VEHICLE CHASSIS NO"><br>
-                                                                
-                                                                <p class="moto-text_system_8">*ADDITIONAL INFORMATION*</p>
-                                                                <label for="name">REGISTRATION NUMBER</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your registration number">
+                                                            <label for="name">PHONE NUMBER: (RES)</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your PHONE NUMBER">
 
-                                                                <label for="name">DATE OF REG.</label>
-                                                                <input type="text" id="name" name="name" placeholder="DD/MM/YYYY">
+                                                            <label for="name">EMAIL:</label>
+                                                            <input type="text" id="email" name="email"
+                                                                placeholder="Your email address">
 
-                                                                <label for="name">PREVIOUS INSURER</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your pre. insurer">
+                                                            <label for="name">PAN NUMBER:</label>
+                                                            <input type="text" id="name" name="NUMBER"
+                                                                placeholder="Your PAN NUMBER">
 
-                                                                <label for="name">PRIVACY POLICY NUMBER</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your PRIVACY POLICY NUMBER">
 
-                                                                <label for="name">PREVIOUS PERIOD OF INSURER</label>
-                                                                <input type="text" id="name" name="name" placeholder="FROM DD/MM/YYYY TO DD/MM/YYYY">
+                                                            <p class="moto-text_system_8">*premium details*</p>
 
-                                                                <label for="name">CURRENT PERIOD OF INSURER</label>
-                                                                <input type="text" id="name" name="name" placeholder="FROM DD/MM/YYYY TO DD/MM/YYYY">
-                                                                
-                                                                
-                                                                 
-                                                          
-                                                            </div>
-            
-                                                            <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
-                                                            <button type="submit" onclick="myFunction()">Submit</button>
-                                                        </form><br>
-                                                        <script>
-                                                            function myFunction() {
-                                                                var x = document.getElementById("name");
-                                                                var y = document.getElementById("email").value;
-                                                                var z = document.getElementById("phone").value;
-                                                                var w = document.getElementById("address").value;
-                                                                var forms = document.getElementById("form_1");
-                                                                    console.log("Saving value", forms.elements[1].value);
-                                                                    console.log(x.value);
-                                                            }
-                                                        </script><br>
+                                                            <label for="name">AMOUNT RUPEES</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your AMOUNT RUPEES">
 
-                                                        <div
+                                                            <p class="moto-text_system_8">*Bank Account Details*</p>
+
+                                                            <label for="name">NAME OF BANK ACCOUNT HOLDER:</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your bank account number">
+
+                                                            <label for="name">NAME OF BANK:</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your BANK NAME">
+
+                                                            <label for="name">BRANCH</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your  BRANCH NAME">
+
+                                                            <label for="name">IFSC CODE:</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="11 CHARACHTER CODE APPEEARING ON YOUR CHEQUE LEAF">
+
+                                                            <p class="moto-text_system_8">*PAYMENT DETAILS*</p>
+
+                                                            <label for="name">CHEQUE NUMBER</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="LAST 5 DIGIT NUMBER">
+
+                                                            <label for="name">AMOUNT </label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your AMOUNT RUPEES">
+
+                                                            <label for="name">BANK NAME</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your  BRANCH NAME">
+
+                                                            <p class="moto-text_system_8">*RISK INFORMATION*</p>
+                                                            <label for="name">VEHICLE MANUFACURE</label>
+                                                            <input type="text" id="name" name="name" placeholder=" ..">
+
+                                                            <label for="name">VEHICLE MODEL</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your VEHICLE MODEL">
+
+                                                            <label for="name">ENGINE NO</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your ENGINE NO">
+
+                                                            <label for="name">CHASSIS N0</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="YouR VEHICLE CHASSIS NO"><br>
+
+                                                            <p class="moto-text_system_8">*ADDITIONAL INFORMATION*</p>
+                                                            <label for="name">REGISTRATION NUMBER</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your registration number">
+
+                                                            <label for="name">DATE OF REG.</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="DD/MM/YYYY">
+
+                                                            <label for="name">PREVIOUS INSURER</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your pre. insurer">
+
+                                                            <label for="name">PRIVACY POLICY NUMBER</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="Your PRIVACY POLICY NUMBER">
+
+                                                            <label for="name">PREVIOUS PERIOD OF INSURER</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="FROM DD/MM/YYYY TO DD/MM/YYYY">
+
+                                                            <label for="name">CURRENT PERIOD OF INSURER</label>
+                                                            <input type="text" id="name" name="name"
+                                                                placeholder="FROM DD/MM/YYYY TO DD/MM/YYYY">
+
+
+
+
+                                                    </div>
+
+                                                    <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
+                                                    <button type="submit" onclick="myFunction()">Submit</button>
+                                                    </form><br>
+                                                    <script>
+                                                        function myFunction() {
+                                                            var x = document.getElementById("name");
+                                                            var y = document.getElementById("email").value;
+                                                            var z = document.getElementById("phone").value;
+                                                            var w = document.getElementById("address").value;
+                                                            var forms = document.getElementById("form_1");
+                                                            console.log("Saving value", forms.elements[1].value);
+                                                            console.log(x.value);
+                                                        }
+                                                    </script><br>
+
+                                                    <div
                                                         class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
                                                         <div class="moto-widget-text-content moto-widget-text-editable">
-                                                            <p class="moto-text_system_8"> CRITICAL ILLNESS INSURANCE</p>
+                                                            <p class="moto-text_system_8"> CRITICAL ILLNESS INSURANCE
+                                                            </p>
                                                             <style>
                                                                 input[type=text],
                                                                 input[type=number],
@@ -466,7 +535,7 @@
                                                                     border-radius: 4px;
                                                                     box-sizing: border-box;
                                                                 }
-                
+
                                                                 input[type=submit] {
                                                                     width: 100%;
                                                                     background-color: #4CAF50;
@@ -477,46 +546,49 @@
                                                                     border-radius: 4px;
                                                                     cursor: pointer;
                                                                 }
-                
+
                                                                 input[type=submit]:hover {
                                                                     background-color: #45a049;
                                                                 }
                                                             </style>
                                                             <form id="form_1">
                                                                 <label for="name">Name</label>
-                                                                <input type="text" id="name" name="name" placeholder="Your name..">
-                
+                                                                <input type="text" id="name" name="name"
+                                                                    placeholder="Your name..">
+
                                                                 <label for="email">E-mail</label>
-                                                                <input type="text" id="email" name="email" placeholder="Your E-mail..">
-                
+                                                                <input type="text" id="email" name="email"
+                                                                    placeholder="Your E-mail..">
+
                                                                 <label for="contact">Contact Number</label>
                                                                 <input type="number" id="phone" name="phone"
                                                                     placeholder="Your Contact Number..">
-                
+
                                                                 <label for="email">Address</label>
                                                                 <input type="text" id="address" name="address"
                                                                     placeholder="Your Address..">
-                
-                                                                </div>
-                
-                                                                <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
-                                                                <button type="submit" onclick="myFunction()">Submit</button>
-                                                            </form><br>
-                                                            <script>
-                                                                function myFunction() {
-                                                                    var x = document.getElementById("name");
-                                                                    var y = document.getElementById("email").value;
-                                                                    var z = document.getElementById("phone").value;
-                                                                    var w = document.getElementById("address").value;
-                                                                    var forms = document.getElementById("form_1");
-                                                                        console.log("Saving value", forms.elements[1].value);
-                                                                        console.log(x.value);
-                                                                }
-                                                            </script><br>
 
-                                                            <div
+                                                        </div>
+
+                                                        <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
+                                                        <button type="submit" onclick="myFunction()">Submit</button>
+                                                        </form><br>
+                                                        <script>
+                                                            function myFunction() {
+                                                                var x = document.getElementById("name");
+                                                                var y = document.getElementById("email").value;
+                                                                var z = document.getElementById("phone").value;
+                                                                var w = document.getElementById("address").value;
+                                                                var forms = document.getElementById("form_1");
+                                                                console.log("Saving value", forms.elements[1].value);
+                                                                console.log(x.value);
+                                                            }
+                                                        </script><br>
+
+                                                        <div
                                                             class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
-                                                            <div class="moto-widget-text-content moto-widget-text-editable">
+                                                            <div
+                                                                class="moto-widget-text-content moto-widget-text-editable">
                                                                 <p class="moto-text_system_8">HOME INSURANCE</p>
                                                                 <style>
                                                                     input[type=text],
@@ -530,7 +602,7 @@
                                                                         border-radius: 4px;
                                                                         box-sizing: border-box;
                                                                     }
-                    
+
                                                                     input[type=submit] {
                                                                         width: 100%;
                                                                         background-color: #4CAF50;
@@ -541,29 +613,32 @@
                                                                         border-radius: 4px;
                                                                         cursor: pointer;
                                                                     }
-                    
+
                                                                     input[type=submit]:hover {
                                                                         background-color: #45a049;
                                                                     }
                                                                 </style>
                                                                 <form id="form_1">
                                                                     <label for="name">Name</label>
-                                                                    <input type="text" id="name" name="name" placeholder="Your name..">
-                    
+                                                                    <input type="text" id="name" name="name"
+                                                                        placeholder="Your name..">
+
                                                                     <label for="email">E-mail</label>
-                                                                    <input type="text" id="email" name="email" placeholder="Your E-mail..">
-                    
+                                                                    <input type="text" id="email" name="email"
+                                                                        placeholder="Your E-mail..">
+
                                                                     <label for="contact">Contact Number</label>
                                                                     <input type="number" id="phone" name="phone"
                                                                         placeholder="Your Contact Number..">
-                    
+
                                                                     <label for="email">Address</label>
                                                                     <input type="text" id="address" name="address"
                                                                         placeholder="Your Address..">
-                    
-                                                                    
+
+
                                                                     <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
-                                                                    <button type="submit" onclick="myFunction()">Submit</button>
+                                                                    <button type="submit"
+                                                                        onclick="myFunction()">Submit</button>
                                                                 </form><br>
                                                                 <script>
                                                                     function myFunction() {
@@ -572,78 +647,17 @@
                                                                         var z = document.getElementById("phone").value;
                                                                         var w = document.getElementById("address").value;
                                                                         var forms = document.getElementById("form_1");
-                                                                            console.log("Saving value", forms.elements[1].value);
-                                                                            console.log(x.value);
+                                                                        console.log("Saving value", forms.elements[1].value);
+                                                                        console.log(x.value);
                                                                     }
                                                                 </script><br>
 
                                                                 <div
-                                                                class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
-                                                                <div class="moto-widget-text-content moto-widget-text-editable">
-                                                                    <p class="moto-text_system_8">MOTOR INSURANCE</p>
-                                                                    <style>
-                                                                        input[type=text],
-                                                                        input[type=number],
-                                                                        select {
-                                                                            width: 100%;
-                                                                            padding: 12px 20px;
-                                                                            margin: 8px 0;
-                                                                            display: inline-block;
-                                                                            border: 1px solid #ccc;
-                                                                            border-radius: 4px;
-                                                                            box-sizing: border-box;
-                                                                        }
-                        
-                                                                        input[type=submit] {
-                                                                            width: 100%;
-                                                                            background-color: #4CAF50;
-                                                                            color: white;
-                                                                            padding: 14px 20px;
-                                                                            margin: 8px 0;
-                                                                            border: none;
-                                                                            border-radius: 4px;
-                                                                            cursor: pointer;
-                                                                        }
-                        
-                                                                        input[type=submit]:hover {
-                                                                            background-color: #45a049;
-                                                                        }
-                                                                    </style>
-                                                                    <form id="form_1">
-                                                                        <label for="name">Name</label>
-                                                                        <input type="text" id="name" name="name" placeholder="Your name..">
-                        
-                                                                        <label for="email">E-mail</label>
-                                                                        <input type="text" id="email" name="email" placeholder="Your E-mail..">
-                        
-                                                                        <label for="contact">Contact Number</label>
-                                                                        <input type="number" id="phone" name="phone"
-                                                                            placeholder="Your Contact Number..">
-                        
-                                                                        <label for="email">Address</label>
-                                                                        <input type="text" id="address" name="address"
-                                                                            placeholder="Your Address..">
-                        
-                                                                       
-                                                                        <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
-                                                                        <button type="submit" onclick="myFunction()">Submit</button>
-                                                                    </form><br>
-                                                                    <script>
-                                                                        function myFunction() {
-                                                                            var x = document.getElementById("name");
-                                                                            var y = document.getElementById("email").value;
-                                                                            var z = document.getElementById("phone").value;
-                                                                            var w = document.getElementById("address").value;
-                                                                            var forms = document.getElementById("form_1");
-                                                                                console.log("Saving value", forms.elements[1].value);
-                                                                                console.log(x.value);
-                                                                        }
-                                                                    </script><br>
-
-                                                                    <div
                                                                     class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
-                                                                    <div class="moto-widget-text-content moto-widget-text-editable">
-                                                                        <p class="moto-text_system_8">PERSONAL ACCIDENT INSURANCE</p>
+                                                                    <div
+                                                                        class="moto-widget-text-content moto-widget-text-editable">
+                                                                        <p class="moto-text_system_8">MOTOR INSURANCE
+                                                                        </p>
                                                                         <style>
                                                                             input[type=text],
                                                                             input[type=number],
@@ -656,7 +670,7 @@
                                                                                 border-radius: 4px;
                                                                                 box-sizing: border-box;
                                                                             }
-                            
+
                                                                             input[type=submit] {
                                                                                 width: 100%;
                                                                                 background-color: #4CAF50;
@@ -667,29 +681,33 @@
                                                                                 border-radius: 4px;
                                                                                 cursor: pointer;
                                                                             }
-                            
+
                                                                             input[type=submit]:hover {
                                                                                 background-color: #45a049;
                                                                             }
                                                                         </style>
                                                                         <form id="form_1">
                                                                             <label for="name">Name</label>
-                                                                            <input type="text" id="name" name="name" placeholder="Your name..">
-                            
+                                                                            <input type="text" id="name" name="name"
+                                                                                placeholder="Your name..">
+
                                                                             <label for="email">E-mail</label>
-                                                                            <input type="text" id="email" name="email" placeholder="Your E-mail..">
-                            
+                                                                            <input type="text" id="email" name="email"
+                                                                                placeholder="Your E-mail..">
+
                                                                             <label for="contact">Contact Number</label>
                                                                             <input type="number" id="phone" name="phone"
                                                                                 placeholder="Your Contact Number..">
-                            
+
                                                                             <label for="email">Address</label>
-                                                                            <input type="text" id="address" name="address"
+                                                                            <input type="text" id="address"
+                                                                                name="address"
                                                                                 placeholder="Your Address..">
-                            
-                                                                                                     
+
+
                                                                             <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
-                                                                            <button type="submit" onclick="myFunction()">Submit</button>
+                                                                            <button type="submit"
+                                                                                onclick="myFunction()">Submit</button>
                                                                         </form><br>
                                                                         <script>
                                                                             function myFunction() {
@@ -698,86 +716,175 @@
                                                                                 var z = document.getElementById("phone").value;
                                                                                 var w = document.getElementById("address").value;
                                                                                 var forms = document.getElementById("form_1");
-                                                                                    console.log("Saving value", forms.elements[1].value);
-                                                                                    console.log(x.value);
+                                                                                console.log("Saving value", forms.elements[1].value);
+                                                                                console.log(x.value);
                                                                             }
                                                                         </script><br>
 
                                                                         <div
-                                                                        class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
-                                                                        <div class="moto-widget-text-content moto-widget-text-editable">
-                                                                            <p class="moto-text_system_8">STANDERD FIRE AND SPECIAL PERILS INSURANCE</p>
-                                                                            <style>
-                                                                                input[type=text],
-                                                                                input[type=number],
-                                                                                select {
-                                                                                    width: 100%;
-                                                                                    padding: 12px 20px;
-                                                                                    margin: 8px 0;
-                                                                                    display: inline-block;
-                                                                                    border: 1px solid #ccc;
-                                                                                    border-radius: 4px;
-                                                                                    box-sizing: border-box;
-                                                                                }
-                                
-                                                                                input[type=submit] {
-                                                                                    width: 100%;
-                                                                                    background-color: #4CAF50;
-                                                                                    color: white;
-                                                                                    padding: 14px 20px;
-                                                                                    margin: 8px 0;
-                                                                                    border: none;
-                                                                                    border-radius: 4px;
-                                                                                    cursor: pointer;
-                                                                                }
-                                
-                                                                                input[type=submit]:hover {
-                                                                                    background-color: #45a049;
-                                                                                }
-                                                                            </style>
-                                                                            <form id="form_1">
-                                                                                <label for="name">Name</label>
-                                                                                <input type="text" id="name" name="name" placeholder="Your name..">
-                                
-                                                                                <label for="email">E-mail</label>
-                                                                                <input type="text" id="email" name="email" placeholder="Your E-mail..">
-                                
-                                                                                <label for="contact">Contact Number</label>
-                                                                                <input type="number" id="phone" name="phone"
-                                                                                    placeholder="Your Contact Number..">
-                                
-                                                                                <label for="email">Address</label>
-                                                                                <input type="text" id="address" name="address"
-                                                                                    placeholder="Your Address..">
-                                
-                                                                               
-                                                                                <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
-                                                                                <button type="submit" onclick="myFunction()">Submit</button>
-                                                                            </form><br>
-                                                                            <script>
-                                                                                function myFunction() {
-                                                                                    var x = document.getElementById("name");
-                                                                                    var y = document.getElementById("email").value;
-                                                                                    var z = document.getElementById("phone").value;
-                                                                                    var w = document.getElementById("address").value;
-                                                                                    var forms = document.getElementById("form_1");
+                                                                            class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
+                                                                            <div
+                                                                                class="moto-widget-text-content moto-widget-text-editable">
+                                                                                <p class="moto-text_system_8">PERSONAL
+                                                                                    ACCIDENT INSURANCE</p>
+                                                                                <style>
+                                                                                    input[type=text],
+                                                                                    input[type=number],
+                                                                                    select {
+                                                                                        width: 100%;
+                                                                                        padding: 12px 20px;
+                                                                                        margin: 8px 0;
+                                                                                        display: inline-block;
+                                                                                        border: 1px solid #ccc;
+                                                                                        border-radius: 4px;
+                                                                                        box-sizing: border-box;
+                                                                                    }
+
+                                                                                    input[type=submit] {
+                                                                                        width: 100%;
+                                                                                        background-color: #4CAF50;
+                                                                                        color: white;
+                                                                                        padding: 14px 20px;
+                                                                                        margin: 8px 0;
+                                                                                        border: none;
+                                                                                        border-radius: 4px;
+                                                                                        cursor: pointer;
+                                                                                    }
+
+                                                                                    input[type=submit]:hover {
+                                                                                        background-color: #45a049;
+                                                                                    }
+                                                                                </style>
+                                                                                <form id="form_1">
+                                                                                    <label for="name">Name</label>
+                                                                                    <input type="text" id="name"
+                                                                                        name="name"
+                                                                                        placeholder="Your name..">
+
+                                                                                    <label for="email">E-mail</label>
+                                                                                    <input type="text" id="email"
+                                                                                        name="email"
+                                                                                        placeholder="Your E-mail..">
+
+                                                                                    <label for="contact">Contact
+                                                                                        Number</label>
+                                                                                    <input type="number" id="phone"
+                                                                                        name="phone"
+                                                                                        placeholder="Your Contact Number..">
+
+                                                                                    <label for="email">Address</label>
+                                                                                    <input type="text" id="address"
+                                                                                        name="address"
+                                                                                        placeholder="Your Address..">
+
+
+                                                                                    <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
+                                                                                    <button type="submit"
+                                                                                        onclick="myFunction()">Submit</button>
+                                                                                </form><br>
+                                                                                <script>
+                                                                                    function myFunction() {
+                                                                                        var x = document.getElementById("name");
+                                                                                        var y = document.getElementById("email").value;
+                                                                                        var z = document.getElementById("phone").value;
+                                                                                        var w = document.getElementById("address").value;
+                                                                                        var forms = document.getElementById("form_1");
                                                                                         console.log("Saving value", forms.elements[1].value);
                                                                                         console.log(x.value);
-                                                                                }
-                                                                            </script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="moto-widget moto-widget-spacer moto-preset-default moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto moto-visible-on_tablet">
-                                <div class="moto-widget-spacer-block" style="height:10px"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                                                                    }
+                                                                                </script><br>
+
+                                                                                <div
+                                                                                    class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
+                                                                                    <div
+                                                                                        class="moto-widget-text-content moto-widget-text-editable">
+                                                                                        <p class="moto-text_system_8">
+                                                                                            STANDERD FIRE AND SPECIAL
+                                                                                            PERILS INSURANCE</p>
+                                                                                        <style>
+                                                                                            input[type=text],
+                                                                                            input[type=number],
+                                                                                            select {
+                                                                                                width: 100%;
+                                                                                                padding: 12px 20px;
+                                                                                                margin: 8px 0;
+                                                                                                display: inline-block;
+                                                                                                border: 1px solid #ccc;
+                                                                                                border-radius: 4px;
+                                                                                                box-sizing: border-box;
+                                                                                            }
+
+                                                                                            input[type=submit] {
+                                                                                                width: 100%;
+                                                                                                background-color: #4CAF50;
+                                                                                                color: white;
+                                                                                                padding: 14px 20px;
+                                                                                                margin: 8px 0;
+                                                                                                border: none;
+                                                                                                border-radius: 4px;
+                                                                                                cursor: pointer;
+                                                                                            }
+
+                                                                                            input[type=submit]:hover {
+                                                                                                background-color: #45a049;
+                                                                                            }
+                                                                                        </style>
+                                                                                        <form id="form_1">
+                                                                                            <label
+                                                                                                for="name">Name</label>
+                                                                                            <input type="text" id="name"
+                                                                                                name="name"
+                                                                                                placeholder="Your name..">
+
+                                                                                            <label
+                                                                                                for="email">E-mail</label>
+                                                                                            <input type="text"
+                                                                                                id="email" name="email"
+                                                                                                placeholder="Your E-mail..">
+
+                                                                                            <label for="contact">Contact
+                                                                                                Number</label>
+                                                                                            <input type="number"
+                                                                                                id="phone" name="phone"
+                                                                                                placeholder="Your Contact Number..">
+
+                                                                                            <label
+                                                                                                for="email">Address</label>
+                                                                                            <input type="text"
+                                                                                                id="address"
+                                                                                                name="address"
+                                                                                                placeholder="Your Address..">
+
+
+                                                                                            <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
+                                                                                            <button type="submit"
+                                                                                                onclick="myFunction()">Submit</button>
+                                                                                        </form><br>
+                                                                                        <script>
+                                                                                            function myFunction() {
+                                                                                                var x = document.getElementById("name");
+                                                                                                var y = document.getElementById("email").value;
+                                                                                                var z = document.getElementById("phone").value;
+                                                                                                var w = document.getElementById("address").value;
+                                                                                                var forms = document.getElementById("form_1");
+                                                                                                console.log("Saving value", forms.elements[1].value);
+                                                                                                console.log(x.value);
+                                                                                            }
+                                                                                        </script>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div
+                                                                        class="moto-widget moto-widget-spacer moto-preset-default moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto moto-visible-on_tablet">
+                                                                        <div class="moto-widget-spacer-block"
+                                                                            style="height:10px"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
         </section>
     </div>
 
@@ -910,7 +1017,7 @@
             <div
                 class="moto-widget-callback__open-button moto-widget-callback__thumbnail-wrapper moto-widget-callback__thumbnail-wrapper_icon">
                 <div class="moto-widget-callback__overlay moto-widget-callback__overlay_open-button">
-                    
+
                 </div>
                 <div class="moto-widget-callback__thumbnail moto-widget-callback__thumbnail_icon fa fa-fw fa-phone">
                 </div>
