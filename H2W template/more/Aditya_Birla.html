@@ -189,7 +189,8 @@
                                             <div
                                                 class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-medium moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
                                                 <div class="moto-widget-text-content moto-widget-text-editable">
-                                                    <h2 class="moto-text_system_5">Aditya Birla</h2>
+                                                    <h2 class="moto-text_system_5">Aditya Birla</h2><br>
+                                                    <h3> Health Insurance</h3><br><br>
                                                     <style>
                                                         input[type=text],
                                                         input[type=number],
@@ -218,233 +219,64 @@
                                                             background-color: #45a049;
                                                         }
                                                     </style>
-                                                    <form id="form_1">
-                                                        <label for="name">Name</label>
-                                                        <input type="text" id="name" name="name" placeholder="Your name..">
+                                                    <form id="form_1" action="/action_page.php">
+                                                        <label for="browsers">Looking for...<br></label>
+                                                      <input list="browsers" name="browser">
+                                                            <datalist id="browsers">
+                                                              <option value="Protection against hospitalisation expenses">
+                                                              <option value="Protection against cancer">
+                                                              <option value="Protection against critical illness">
+                                                              <option value="Protection against hospital expenses for senior citizens">
+                                            
+                                                            </datalist><br><br>
+                                                           
+                                                            <form action="/action_page.php">
         
-                                                        <label for="email">E-mail</label>
-                                                        <input type="text" id="email" name="email" placeholder="Your E-mail..">
+                                                        <label for="browsers">I'D like to cover...<br></label>
+                                                        <input list="browsers"  name="browsers">
+                                                        <datalist id="browsers">
+                                                            <option value="Self">
+                                                            <option value="Self & Spouse">
+                                                            <option value="Self & Kids">
+                                                            <option value="Self, Spouse & Kids">
+                                                            <option value="Spouse & Kids">
+                                                            <option value="Different Family Construct"> 
+                                          
+                                                          </datalist><br><br>
         
-                                                        <label for="contact">Contact Number</label>
+                                                        <label for="contact">My Age</label>
+                                                        <input type="number" id="age" name="age"
+                                                            placeholder="...years">
+        
+                                                        <label for="email">Phone Number</label>
                                                         <input type="number" id="phone" name="phone"
-                                                            placeholder="Your Contact Number..">
+                                                            placeholder="Your Contact">
+
+                                                            <label for="email">Email id</label>
+                                                            <input type="text" id="email" name="email"
+                                                                placeholder="Eg= abc@gmail.com">
+                                                                
+                                                                <button type="submit" onclick="myfunction()">Submit</button>
+                                                                </form>
+                                                                </form>
+                                                                <script>
+                                                                    function myfunction() {
+                                                                        var x = document.getElementById(browsers);
+                                                                        var y = document.getElementById(browsers).value;
+                                                                        var z = document.getElementById(age).value;
+                                                                        var w = document.getElementById(phone).value;
+                                                                        var v = document.getElementById(email).value;
+                                                                        var forms = document.getElementById("forms_1");
+                                                                        console.log("saving value",forms.elements[1].value);
+                                                                        console.log(x.value);
+                                                                    }
+                                                                </script>
         
-                                                        <label for="email">Address</label>
-                                                        <input type="text" id="address" name="address"
-                                                            placeholder="Your Address..">
-        
-                                                        <label for="dof_2">2 wheeler</label>
-                                                        <div class="row">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="dof_2" name="name" placehoder="DOF" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="ci_2" name="name" placehoder="Client Insurance" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="number"
-                                                                id="pa_2" name="name" placehoder="Paid Amount" value="">
-                                                        </div>
-        
-                                                        <label for="dof_4">4 wheeler</label>
-                                                        <div class="row">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="dof_4" name="name" placehoder="DOF" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="ci_f" name="name" placehoder="Client Insurance" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="number"
-                                                                id="pa_4" name="name" placehoder="Paid Amount" value="">
-                                                        </div>
-                                                        <label for="dof_m">Mediclaim</label>
-                                                        <div class="row">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="dof_m" name="name" placehoder="DOF" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="ci_m" name="name" placehoder="Client Insurance" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="number"
-                                                                id="pa_m" name="name" placehoder="Paid Amount" value="">
-                                                        </div>
-                                                        <label for="dof_f">Fire Insurance</label>
-                                                        <div class="row">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="dof_f" name="name" placehoder="DOF" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="ci_f" name="name" placehoder="Client Insurance" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="number"
-                                                                id="pa_f" name="name" placehoder="Paid Amount" value="">
-                                                        </div>
-                                                        <label for="dof_p">Property Insurance</label>
-                                                        <div class="row">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="dof_p" name="name" placehoder="DOF" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="text"
-                                                                id="ci_p" name="name" placehoder="Client Insurance" value="">
-                                                            <input class="col-sm-3"
-                                                                style="margin-left: auto; margin-right: auto;" type="number"
-                                                                id="pa_p" name="name" placehoder="Paid Amount" value="">
-                                                        </div>
-        
-                                                        <!-- <input type="submit" value="Submit" onclick="myFunction()"> -->
-                                                        <button type="submit" onclick="myFunction()">Submit</button>
-                                                    </form>
-                                                    <!-- <script>
-                                                        var form = document.querySelector("form");
-                                                        form.addEventListener("submit", function (event) {
-                                                            console.log("Saving value", form.elements.value.value);
-                                                            event.preventDefault();
-                                                        });
-                                                    </script> -->
-        
-                                                    <script>
-                                                        function myFunction() {
-                                                            var x = document.getElementById("name");
-                                                            var y = document.getElementById("email").value;
-                                                            var z = document.getElementById("phone").value;
-                                                            var w = document.getElementById("address").value;
-                                                            var forms = document.getElementById("form_1");
-                                                                console.log("Saving value", forms.elements[1].value);
-                                                                console.log(x.value);
-                                                        }
-                                                    </script>
+                                                        
                                                 </div>
                                                 </div>
                                             </div>
-                                            <div
-                                                class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-auto moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
-                                                <div class="moto-widget-text-content moto-widget-text-editable">
-                                                    <p class="moto-text_system_8">GENERAL INFORMATION</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10">Welcome to our Privacy Policy page!
-                                                        When you use our web site services, you trust us with your
-                                                        information. This Privacy Policy is meant to help you understand
-                                                        what data we collect, why we collect it, and what we do with it.
-                                                        When you share information with us, we can make our services
-                                                        even better for you. For instance, we can show you more relevant
-                                                        search results and ads, help you connect with people or to make
-                                                        sharing with others quicker and easier. As you use our services,
-                                                        we want you to be clear how we’re using information and the ways
-                                                        in which you can protect your privacy. This is important; we
-                                                        hope you will take time to read it carefully. Remember, you can
-                                                        find controls to manage your information and protect your
-                                                        privacy and security. We’ve tried to keep it as simple as
-                                                        possible.</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_8"><br></p>
-                                                    <p class="moto-text_system_8">RIGHT TO ACCESS, CORRECT AND DELETE
-                                                        DATA AND TO OBJECT TO DATA PROCESSING</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10">Our customers have the right to
-                                                        access, correct and delete personal data relating to them, and
-                                                        to object to the processing of such data, by addressing a
-                                                        written request, at any time. The Company makes every effort to
-                                                        put in place suitable precautions to safeguard the security and
-                                                        privacy of personal data, and to prevent it from being altered,
-                                                        corrupted, destroyed or accessed by unauthorized third parties.
-                                                        However, the Company does not control each and every risk
-                                                        related to the use of the Internet, and therefore warns the Site
-                                                        users of the potential risks involved in the functioning and use
-                                                        of the Internet. The Site may include links to other web sites
-                                                        or other internet sources. As the Company cannot control these
-                                                        web sites and external sources, the Company cannot be held
-                                                        responsible for the provision or display of these web sites and
-                                                        external sources, and may not be held liable for the content,
-                                                        advertising, products, services or any other material available
-                                                        on or from these web sites or external sources.</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_8">MANAGEMENT OF PERSONAL DATA</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10">You can view or edit your personal
-                                                        data online for many of our services. You can also make choices
-                                                        about our collection and use of your data. How you can access or
-                                                        control your personal data will depend on which services you
-                                                        use. You can choose whether you wish to receive promotional
-                                                        communications from our web site by email, SMS, physical mail,
-                                                        and telephone. If you receive promotional email or SMS messages
-                                                        from us and would like to opt out, you can do so by following
-                                                        the directions in that message. You can also make choices about
-                                                        the receipt of promotional email, telephone calls, and postal
-                                                        mail by visiting and signing into Company Promotional
-                                                        Communications Manager, which allows you to update contact
-                                                        information, manage contact preferences, opt out of email
-                                                        subscriptions, and choose whether to share your contact
-                                                        information with our partners. These choices do not apply to
-                                                        mandatory service communications that are part of certain web
-                                                        site services.</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_8">INFORMATION WE COLLECT</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10">Our store collects data to operate
-                                                        effectively and provide you the best experiences with our
-                                                        services. You provide some of this data directly, such as when
-                                                        you create a personal account. We get some of it by recording
-                                                        how you interact with our services by, for example, using
-                                                        technologies like cookies, and receiving error reports or usage
-                                                        data from software running on your device. We also obtain data
-                                                        from third parties (including other companies). For example, we
-                                                        supplement the data we collect by purchasing demographic data
-                                                        from other companies. We also use services from other companies
-                                                        to help us determine a location based on your IP address in
-                                                        order to customize certain services to your location. The data
-                                                        we collect depends on the services and features you use.</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_8">HOW WE USE YOUR INFORMATION</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10">Our web site uses the data we collect
-                                                        for three basic purposes: to operate our business and provide
-                                                        (including improving and personalizing) the services we offer,
-                                                        to send communications, including promotional communications,
-                                                        and to display advertising. In carrying out these purposes, we
-                                                        combine data we collect through the various web site services
-                                                        you use to give you a more seamless, consistent and personalized
-                                                        experience. However, to enhance privacy, we have built in
-                                                        technological and procedural safeguards designed to prevent
-                                                        certain data combinations. For example, we store data we collect
-                                                        from you when you are unauthenticated (not signed in) separately
-                                                        from any account information that directly identifies you, such
-                                                        as your name, email address or phone number.</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_8">SHARING YOUR INFORMATION</p>
-                                                    <p class="moto-text_system_10"><br></p>
-                                                    <p class="moto-text_system_10">We share your personal data with your
-                                                        consent or as necessary to complete any transaction or provide
-                                                        any service you have requested or authorized. For example, we
-                                                        share your content with third parties when you tell us to do so.
-                                                        When you provide payment data to make a purchase, we will share
-                                                        payment data with banks and other entities that process payment
-                                                        transactions or provide other financial services, and for fraud
-                                                        prevention and credit risk reduction. In addition, we share
-                                                        personal data among our controlled affiliates and subsidiaries.
-                                                        We also share personal data with vendors or agents working on
-                                                        our behalf for the purposes described in this statement. For
-                                                        example, companies we've hired to provide customer service
-                                                        support or assist in protecting and securing our systems and
-                                                        services may need access to personal data in order to provide
-                                                        those functions. In such cases, these companies must abide by
-                                                        our data privacy and security requirements and are not allowed
-                                                        to use personal data they receive from us for any other purpose.
-                                                        We may also disclose personal data as part of a corporate
-                                                        transaction such as a merger or sale of assets.<br></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            
                             <div
                                 class="moto-widget moto-widget-spacer moto-preset-default moto-spacing-top-large moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto moto-visible-on_tablet">
                                 <div class="moto-widget-spacer-block" style="height:10px"></div>
