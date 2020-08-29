@@ -30,6 +30,8 @@
     </style>
     <link rel="stylesheet" href="../mt-demo/63400/63453/mt-content/assets/styles466e.css?_build=1591958790"
         id="moto-website-style" />
+        
+        
 </head>
 
 <body class="moto-background moto-website_live">
@@ -199,6 +201,16 @@
                                                             border-radius: 4px;
                                                             box-sizing: border-box;
                                                         }
+                                                        input[type=date],
+                                                        select {
+                                                            width: 100%;
+                                                            padding: 12px 20px;
+                                                            margin: 8px 0;
+                                                            display: inline-block;
+                                                            border: 1px solid #ccc;
+                                                            border-radius: 4px;
+                                                            box-sizing: border-box;
+                                                        }
 
                                                         input[type=submit] {
                                                             width: 100%;
@@ -218,19 +230,21 @@
                                                     <form id="form_1">
                                                        <h3> <label for="name">NAME OF PROPOSER:</label></h3>
                                                         <input type="text" id="name" name="name" placeholder=" NAME">
-
+                                                    <div class="row">
+                                                        <div class="column">
                                                         <label for="Date of Birth"> 
                                                            <h4> DATE OF BIRTH:</h4>
                                                             <input type="date" name="date"> 
-                                                        </label> <br>
-                                                        
-                                                        <h3>GENDER</h3>
+                                                        </label> <br></div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                        <div class="column">
+                                                        <h3>  GENDER</h3>
                                                         <input type="radio" id="male" name="gender" value="male">
                                                         <label for="male">Male</label><br>
                                                         <input type="radio" id="female" name="gender" value="female">
                                                         <label for="female">Female</label><br>
                                                         <input type="radio" id="other" name="gender" value="other">
-                                                        <label for="other">Other</label><br>
+                                                        <label for="other">Other</label><br></div>
+                                                        </div><br>
 
                                                        <h3> <label for="trip">CORR.ADD: BUILDING NAME/BLOCK NUMBER:</label></h3>
                                                         <input type="text" id="address" name="ADDRESS"
@@ -244,25 +258,25 @@
                                                                <h3> <label for="name">city: </label></h3>
                                                                 <input type="text" id="name" name="name"
                                                                     placeholder="Your city name">
-                                                            </div>
+                                                            </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 
                                                             <div class="column">
                                                                 <h3><label for="name">STATE:</label></h3>
                                                                 <input type="text" id="state" name="state"
                                                                     placeholder="Your state name">
-                                                            </div>
+                                                            </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 
                                                             <div class="column">
                                                                <h3> <label for="name">PINCODE:</label></h3>
-                                                                <input type="integer" id="pincode" name="PIN CODE "
+                                                                <input type="number" id="pincode" name="PIN CODE "
                                                                     placeholder="Your PINCODE NUMBER">
-                                                            </div>
+                                                            </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 
                                                             <div class="column">
                                                                <h3> <label for="name">PHONE NUMBER: (RES)</label></h3>
                                                                 <input type="text" id="name" name="name"
                                                                     placeholder="Your PHONE NUMBER">
-                                                            </div>
+                                                            </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                                                         </div>
 
                                                        <h3> <label for="name">EMAIL:</label></h3>
@@ -274,7 +288,7 @@
                                                        <h3> <label for="name">PAN NUMBER:</label></h3>
                                                         <input type="text" id="name" name="NUMBER"
                                                             placeholder="Your PAN NUMBER">
-                                                            </div>
+                                                           </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                                                         <div class="column">
                                                        <h3> <label for="name">PASSPORT NUMBER:</label></h3>
                                                         <input type="text" id="name" name="name"
@@ -283,10 +297,15 @@
                                                             </div><br>
 
                                                        <h2> <p class="moto-text_system_8">*premium details*</p></h2>
-
-                                                       <h3> <label for="name">AMOUNT RUPEES</label></h3>
+                                                       
+                                                       <div class="row">
+                                                        <div class="">
+                                                       <h3> <label for="name">AMOUNT RUPEES:</label></h3>
                                                         <input type="text" id="name" name="name"
                                                             placeholder="Your AMOUNT RUPEES">
+                                                            </div>
+                                                            </div>
+                                                            
 
                                                        <h2> <p class="moto-text_system_8">*Bank Account Details*</p></h2>
 
@@ -294,33 +313,44 @@
                                                         <input type="text" id="name" name="name"
                                                             placeholder="Your bank account number">
 
+                                                        <div class="row">
+                                                            <div class="column">
                                                         <h3><label for="name">NAME OF BANK:</label></h3>
                                                         <input type="text" id="name" name="name"
                                                             placeholder="Your BANK NAME">
-
-                                                        <h3><label for="name">BRANCH</label></h3>
+                                                            </div>&emsp;&emsp;&emsp;;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                        <div class="column">
+                                                        <h3><label for="name">BRANCH:</label></h3>
                                                         <input type="text" id="name" name="name"
                                                             placeholder="Your  BRANCH NAME">
-                                                        <div class="row">
+                                                            </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                        
                                                             <div class="column">
                                                        <h3> <label for="name">IFSC CODE:</label></h3>
                                                         <input type="text" id="name" name="name"
                                                             placeholder="11 CHARACHTER CODE APPEEARING ON YOUR CHEQUE LEAF">
+                                                        </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                                                         </div>
-                                                        </div>
-                                                       <h2> <p class="moto-text_system_8">*PAYMENT DETAILS*</p></h2>
-
-                                                       <h3> <label for="name">CHEQUE NUMBER</label></h3>
+                                                        <br>
+                                                       <h2> <p class="moto-text_system_8">*PAYMENT DETAILS*</p></h2><br>
+                                                       <div class="row">
+                                                        <div class="column">
+                                                       <h3> <label for="name">CHEQUE NUMBER:</label></h3>
                                                         <input type="text" id="name" name="name"
                                                             placeholder="LAST 5 DIGIT NUMBER">
-
-                                                       <h3> <label for="name">AMOUNT </label></h3>
+                                                            
+                                                            </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                        <div class="column">
+                                                       <h3> <label for="name">AMOUNT: </label></h3>
                                                         <input type="text" id="name" name="name"
                                                             placeholder="Your AMOUNT RUPEES">
-
-                                                       <h3> <label for="name">BANK NAME</label></h3>
+                                                            </div>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                                            <div class="column">
+                                                       <h3> <label for="name">BANK NAME:</label></h3>
                                                         <input type="text" id="name" name="name"
                                                             placeholder="Your  BRANCH NAME">
+                                                            </div>
+                                                            </div>
 
                                                 </div>
 
@@ -345,7 +375,7 @@
                                                         <h2 class="moto-text_system_8">COMMERCIAL VEHICLE INSURANCE
                                                         </h2><br>
 
-                                                        <h3 class="moto-text_system_8"> *CUSTOMER INFORMATIONU* </h3>
+                                                        <h3 class="moto-text_system_8"> *CUSTOMER INFORMATION* </h3>
 
 
                                                         <style>
