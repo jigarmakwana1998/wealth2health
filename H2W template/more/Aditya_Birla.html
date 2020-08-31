@@ -33,7 +33,11 @@
 
 
 
-
+        <style>
+            u{
+                text-align: center;
+            }
+        </style>
 
 
 
@@ -190,7 +194,12 @@
                                                 class="moto-widget moto-widget-text moto-preset-default moto-spacing-top-medium moto-spacing-right-auto moto-spacing-bottom-medium moto-spacing-left-auto">
                                                 <div class="moto-widget-text-content moto-widget-text-editable">
                                                     <h2 class="moto-text_system_5">Aditya Birla</h2><br>
-                                                    <h3> Health Insurance</h3><br><br>
+
+                                                    
+
+
+                                                   <u><h1> Health Insurance</h1></u><br>
+                                                  
                                                     <style>
                                                         input[type=text],
                                                         input[type=number],
@@ -219,22 +228,22 @@
                                                             background-color: #45a049;
                                                         }
                                                     </style>
-                                                    <form id="form_1" action="/action_page.php">
-                                                        <label for="browsers">Looking for...<br></label>
-                                                      <input list="browsers" name="browser">
-                                                            <datalist id="browsers">
-                                                              <option value="Protection against hospitalisation expenses">
-                                                              <option value="Protection against cancer">
-                                                              <option value="Protection against critical illness">
-                                                              <option value="Protection against hospital expenses for senior citizens">
-                                            
-                                                            </datalist><br><br>
+                                                    <h3><label for="browser">You are looking for...<br></h3></label>
+                                                    <input list="browser"  name="browser"  style="width:1177px; height:40px;">
+                                                    <datalist id="browser">
+                                                        <option value="Protection against hospitalization expenses">
+                                                        <option value="Protection against cancer">
+                                                        <option value="Protection against critical illness">
+                                                        <option value="Protection against hospitalization expenses for senior citizens">
+                                                      </datalist><br><br>
+
+                                                    
                                                            
                                                             <form action="/action_page.php">
         
-                                                        <label for="browsers">I'D like to cover...<br></label>
-                                                        <input list="browsers"  name="browsers">
-                                                        <datalist id="browsers">
+                                                       <h3><label for="member">Select the member<br></h3></label>
+                                                        <input list="member"  name="member"  style="width:1177px; height:40px;">
+                                                        <datalist id="member">
                                                             <option value="Self">
                                                             <option value="Self & Spouse">
                                                             <option value="Self & Kids">
@@ -244,17 +253,70 @@
                                           
                                                           </datalist><br><br>
         
-                                                        <label for="contact">My Age</label>
-                                                        <input type="number" id="age" name="age"
-                                                            placeholder="...years">
-        
-                                                        <label for="email">Phone Number</label>
-                                                        <input type="number" id="phone" name="phone"
-                                                            placeholder="Your Contact">
+                                                      <h3><label for="age">Age of member</h3></label>
+                                                        <input type="number" id="age" name="age" style="width:1177px; height:40px;"
+                                                            placeholder="Years"><br><br>
 
-                                                            <label for="email">Email id</label>
-                                                            <input type="text" id="email" name="email"
-                                                                placeholder="Eg= abc@gmail.com">
+                                                            <h3><label for="contact">Phone number</label></h3>
+                                                            <input type="number" id="contact" name="contact" style="width:1177px; height:40px;"
+                                                            place holder="Your contact number"><br><br>
+
+                                                            <h3><label for="email">Email</label></h3>
+                                                            <input type="text" id="email" name="email" style="width:1177px; height:40px;"
+                                                            place holder="Eg:abc@gmail.com"><br><br>
+
+                                                            
+
+                                                            <form id="form_1" action="/action_page.php">
+                                                                <h3> <label for="browsers">Sum insured of members<br></h3>
+                                                                      (please select the value of money) <br>
+                                                                  </label>
+                                                                <input list="browsers" name="browser" style="width:1177px; height:40px;">
+                                                                      <datalist id="browsers">
+                                                                        <option value="Rs 4lac"></option>
+                                                                        <option value="Rs 5lac"></option>
+                                                                        <option value="Rs 7lac"></option>
+                                                                        <option value="Rs 10lac"></option>
+                                                                        <option value="Rs 15lac"></option>
+                                                                        <option value="Rs 20lac"></option>
+                                                                        <option value="Rs 25lac"></option>
+                                                                        <option value="Rs 30lac"></option>
+                                                                        <option value="Rs 40lac"></option>
+                                                                        <option value="Rs 50lac"></option>
+                                                                        <option value="Rs 75lac"></option>
+                                                                        <option value="Rs 100lac"></option>
+                                                                        <option value="Rs 150lac"></option>
+                                                                        <option value="Rs 200lac"></option>
+                                                                      </datalist><br><br>
+        
+                                                        <h3><label for="email">Tenure<br></h3>
+                                                        (Definition goes here)</label><br>
+                                                        <input type="radio" id="years" name="tenure" value="1_year">
+                                                        <label for="1_year">1 year</label><br>
+                                                        <input type="radio" id="years" name="tenure" value="2_years">
+                                                        <label for="2_year">2 years</label><br>
+                                                        <input type="radio" id="years" name="tenure" value="3_years">
+                                                        <label for="3_year">3 years</label><br><br>
+
+                                                        <h3><label for="email">Zone of cover<br></h3>
+                                                            (Zone where you avail medical treatment)</label><br>
+                                                            <input type="radio" id="zone" name="zone" value="zone1">
+                                                            <label for="zone1">Zone 1</label><br>
+                                                            <input type="radio" id="zone" name="zone" value="zone2">
+                                                            <label for="zone2">Zone 2</label><br>
+                                                            <input type="radio" id="zone" name="zone" value="zone3">
+                                                            <label for="zone3">Zone 3</label><br><br>
+
+                                                            <h3><label for="email">Room type<br></h3>
+                                                                (Room you are most likely to take while you are under treatment)</label><br>
+                                                                <input type="radio" id="room" name="room" value="any">
+                                                                <label for="any">Any</label><br>
+                                                                <input type="radio" id="room" name="room" value="single">
+                                                                <label for="single">Single</label><br>
+                                                                <input type="radio" id="room" name="room" value="shared">
+                                                                <label for="shared">Shared</label><br><br>
+
+                                                         
                                                                 
                                                                 <button type="submit" onclick="myfunction()">Submit</button>
                                                                 </form>
@@ -262,10 +324,11 @@
                                                                 <script>
                                                                     function myfunction() {
                                                                         var x = document.getElementById(browsers);
-                                                                        var y = document.getElementById(browsers).value;
+                                                                        var y = document.getElementById(member).value;
                                                                         var z = document.getElementById(age).value;
-                                                                        var w = document.getElementById(phone).value;
-                                                                        var v = document.getElementById(email).value;
+                                                                        var w = document.getElementById(tenure).value;
+                                                                        var v = document.getElementById(zone).value;
+                                                                        var u = document.getElementById(room).value;
                                                                         var forms = document.getElementById("forms_1");
                                                                         console.log("saving value",forms.elements[1].value);
                                                                         console.log(x.value);
