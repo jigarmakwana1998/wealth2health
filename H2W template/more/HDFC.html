@@ -288,15 +288,14 @@
 
                                                                 <div class="column">
                                                                     <h3> <label for="name">PINCODE:</label></h3>
-                                                                    <input type="text" id="pincode" name="pincode"
-                                                                        placeholder="pincode" pattern="[0-6]{6}" min="6"
-                                                                        max="6" style="height: 45px; margin-top: 10px;">
+                                                                    <input type="number" id="pincode" name="pincode"
+                                                                        placeholder="pincode" maxlength="06" min="06" max="06" style="height: 45px; margin-top: 10px;">
                                                                 </div>
                                                                 <div style="margin-right: 100px;"></div>
 
                                                                 <div class="column">
                                                                     <h3> <label for="phone">phone number:</label></h3>
-                                                                    <input type="phone" id="phone" name="phone"
+                                                                    <input type="number" id="contact" name="phone"
                                                                         placeholder="NUMBER" pattern="[0-9]{10}"
                                                                         min="10" max="10"
                                                                         style="height: 45px; width: 245px; margin-top: 10px;">
@@ -458,7 +457,8 @@
                                                         }
                                                     </style>
                                                     <form id="form_1">
-                                                        <h3> <label for="name">NAME OF PROPOSER:</label></h3>
+                                                        <h3>DETAILS OF INSURED</h3>
+                                                        <h3> <label for="name">NAME:</label></h3>
                                                         <input type="text" id="name" name="name" placeholder=" NAME">
                                                         <div class="row">
                                                             <div class="column">
@@ -1136,8 +1136,10 @@
                                                                     }
                                                                 </style>
                                                                 <form id="form_1">
-                                                                    <h3> <label for="name">NAME OF PROPOSER:</label>
+                                                                    <h3>DETAILS OF INSURED</h3>
+                                                                    <h3> <label for="name">NAME:</label>
                                                                     </h3>
+                                                                   
                                                                     <input type="text" id="name" name="name"
                                                                         placeholder=" NAME">
                                                                     <div class="row">
