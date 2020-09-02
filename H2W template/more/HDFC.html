@@ -246,8 +246,10 @@
                                                                     </label> <br></div>
                                                                 <div style="margin-right: 100px;"></div>
                                                                 <div style="margin-right: 100px;"></div>
+
                                                                 <br>
-                                                                <div class="row">
+
+                                                                <div class="column">
                                                                     <h3><label> GENDER</label></h3>
                                                                     <input type="radio" id="male" name="gender"
                                                                         value="male">
@@ -289,37 +291,43 @@
                                                                 <div class="column">
                                                                     <h3> <label for="name">PINCODE:</label></h3>
                                                                     <input type="number" id="pincode" name="pincode"
-                                                                        placeholder="pincode" maxlength="06" min="06" max="06" style="height: 45px; margin-top: 10px;">
+                                                                        placeholder="pincode" min="99999" max="999999"
+                                                                        style="height: 45px; margin-top: 10px; width: 200px;">
                                                                 </div>
-                                                                <div style="margin-right: 100px;"></div>
+                                                                <div style="margin-right: 110px;"></div>
 
                                                                 <div class="column">
                                                                     <h3> <label for="phone">phone number:</label></h3>
-                                                                    <input type="number" id="contact" name="phone"
-                                                                        placeholder="NUMBER" pattern="[0-9]{10}"
-                                                                        min="10" max="10"
-                                                                        style="height: 45px; width: 245px; margin-top: 10px;">
+                                                                    <input type="tel" id="phone" name="phone"
+                                                                        placeholder="123-456-7890"
+                                                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                                                        min="1000000000" max="10000000000"
+                                                                        style="height: 45px; width: 245px; margin-top: 10px;"
+                                                                        required>
 
                                                                 </div>
 
                                                             </div>
-
-                                                            <h3> <label for="name">EMAIL:</label></h3>
-                                                            <input type="text" id="email" name="email"
-                                                                placeholder="Your email address">
-
                                                             <div class="row">
+                                                                <div class="column">
+                                                                    <h3> <label for="name">EMAIL:</label></h3>
+                                                                    <input type="text" id="email" name="email"
+                                                                        placeholder="Your email address"
+                                                                        style="width: 500px;">
+                                                                </div>
+                                                                <div style="margin-right: 120px;"></div>
                                                                 <div class="column">
                                                                     <h3> <label for="name">PAN NUMBER:</label></h3>
                                                                     <input type="text" id="name" name="NUMBER"
                                                                         placeholder="Your PAN NUMBER"
-                                                                        style="margin-left:8px;">
+                                                                        style="margin-left:8px; width: 205px;">
                                                                 </div>
-                                                                <div style="margin-right: 100px;"></div>
+                                                                <div style="margin-right: 110px;"></div>
                                                                 <div class="column">
                                                                     <h3> <label for="name">PASSPORT NUMBER:</label></h3>
                                                                     <input type="text" id="name" name="name"
-                                                                        placeholder="Your passport number">
+                                                                        placeholder="Your passport number"
+                                                                        style="width: 250px;">
                                                                 </div>
                                                             </div><br>
 
@@ -357,7 +365,7 @@
                                                                 <div class="column">
                                                                     <h3><label for="name">BRANCH:</label></h3>
                                                                     <input type="text" id="name" name="name"
-                                                                        placeholder="Your  BRANCH NAME">
+                                                                        placeholder="YOUR BRANCH NAME">
                                                                 </div>
                                                                 <div style="margin-right: 100px;"></div>
 
@@ -377,7 +385,7 @@
                                                                     <h3> <label for="name">CHEQUE NUMBER:</label></h3>
                                                                     <input type="number" id="number"
                                                                         name="cheque number" placeholder="******"
-                                                                        min="10" max="100"
+                                                                        min="9999" max="99999"
                                                                         style="margin-left:8px;  width: 220px;">
 
                                                                 </div>
@@ -470,7 +478,7 @@
                                                             <div style="margin-right: 100px;"></div>
                                                             <div style="margin-right: 100px;"></div>
                                                             <br>
-                                                            <div class="row">
+                                                            <div class="column">
                                                                 <h3><label> GENDER</label></h3>
                                                                 <input type="radio" id="male" name="gender"
                                                                     value="male">
@@ -485,139 +493,205 @@
 
                                                         </div><br>
 
-                                                        <h3> <label for="trip">CURRENT ADDRESS:BUILDING NAME/BLOCK
-                                                                NUMBER:</label></h3>
+                                                        <h3> <label for="trip">ADDRESS FOR CORRESPONDENCE:</label></h3>
                                                         <input type="text" id="address" name="ADDRESS"
                                                             placeholder="..........">
 
-                                                        <h3> <label for="email">STREET NAME:</label></h3>
+                                                        <h3> <label for="email">NAME AND ADDRESS OF MORTGAGEE(S) OR
+                                                                OTHER PERSONS HAVING FINANCIAL INTEREST IN THE PROPERTY:
+                                                            </label></h3>
                                                         <input type="text" id="ref no" name="street name"
-                                                            placeholder="street name">
-                                                        <div class="row">
-                                                            <div class="column">
-                                                                <h3> <label for="name">CITY:</label></h3>
-                                                                <input type="text" id="name" name="name"
-                                                                    placeholder="Your city name"
-                                                                    style="margin-left:8px;">
-                                                            </div>
-                                                            <div style="margin-right: 100px;"></div>
+                                                            placeholder="street name"><br><br><br>
 
-                                                            <div class="column">
-                                                                <h3><label for="name">STATE:</label></h3>
-                                                                <input type="text" id="state" name="state"
-                                                                    placeholder="Your state name">
-                                                            </div>
-                                                            <div style="margin-right: 100px;"></div>
-
-                                                            <div class="column">
-                                                                <h3> <label for="name">PINCODE:</label></h3>
-                                                                <input type="text" id="pincode" name="pincode"
-                                                                    placeholder="pincode" pattern="[0-6]{6}" min="6"
-                                                                    max="6" style="height: 45px; margin-top: 10px;">
-                                                            </div>
-                                                            <div style="margin-right: 100px;"></div>
-
-                                                            <div class="column">
-                                                                <h3> <label for="phone">phone number:</label></h3>
-                                                                <input type="phone" id="phone" name="phone"
-                                                                    placeholder="NUMBER" pattern="[0-9]{10}" min="10"
-                                                                    max="10"
-                                                                    style="height: 45px; width: 245px; margin-top: 10px;">
-
-                                                            </div>
-
-                                                        </div>
-
-                                                        <h3> <label for="name">EMAIL:</label></h3>
+                                                        <h3>*DETAILS OF OTHER INSURANCE*</h3>
+                                                        <h3> <label for="name">NAME OF INSURER:</label></h3>
                                                         <input type="text" id="email" name="email"
                                                             placeholder="Your email address">
 
                                                         <div class="row">
                                                             <div class="column">
-                                                                <h3> <label for="name">PAN NUMBER:</label></h3>
-                                                                <input type="text" id="name" name="NUMBER"
-                                                                    placeholder="Your PAN NUMBER"
-                                                                    style="margin-left:8px;">
+                                                                <h3> <label for="phone">POLICY NUMER(S):</label></h3>
+                                                                <input type="number" id="number" name="policy number"
+                                                                    placeholder="NUMBER"
+                                                                    style="height: 45px; width: 245px; margin-top: 10px;">
                                                             </div>
                                                             <div style="margin-right: 100px;"></div>
                                                             <div class="column">
-                                                                <h3> <label for="name">PASSPORT NUMBER:</label></h3>
-                                                                <input type="text" id="name" name="name"
-                                                                    placeholder="Your passport number">
+                                                                <h3> <label for="phone">SUM INSURED RS:</label></h3>
+                                                                <input type="number" id="RUPEES" name="rupees"
+                                                                    placeholder="RUPEES" 
+                                                                    style="height: 45px; width: 245px; margin-top: 10px;">
                                                             </div>
                                                         </div><br>
+                                                        <div class="row">
+
+                                                            <h3> PERIOD:&emsp;&emsp; FROM</h3>
+                                                            <div style="margin-right: 20px;"></div>
+                                                            <input type="date" id="myDate" value="DATE"
+                                                                style="height: 45px; width: 245px; margin-top: 10px;">
+                                                            <div style="margin-left: 40px;"></div>
+                                                            <h3> TO</h3>
+                                                            <div style="margin-right: 50px;"></div>
+                                                            <input type="date" id="myDate" value="DATE"
+                                                                style="height: 45px; width: 245px; margin-top: 10px;">
+
+                                                        </div>
 
                                                         <h3>
-                                                            <p class="moto-text_system_8">*PREMIUM DETAILS*</p>
+                                                            <p class="moto-text_system_8">*DETAILS OF LOSS*</p>
                                                         </h3>
 
                                                         <div class="row">
-                                                            <div class="">
-                                                                <h3> <label for="name">AMOUNT RUPEES:</label></h3>
+                                                            <div class="column">
+                                                                <h3> <label for="name">TIME & DATE OF FIRE LOSS:</label>
+                                                                </h3>
                                                                 <input type="text" id="name" name="name"
-                                                                    placeholder="Your AMOUNT RUPEES"
-                                                                    style="margin-left:8px;">
+                                                                    placeholder="TIME"
+                                                                    style="margin-left:8px;width: 100px;">
+                                                            </div>
+
+                                                            <div class="column">
+                                                                <input type="date" id="myDate" value="DATE"
+                                                                    style="height: 45px; width: 245px; margin-top: 30px;">
                                                             </div>
                                                         </div>
+                                                        <h3> <label>CAUSE OF FIRE/LOSS:
+                                                            </label></h3>
+                                                        <input type="text" id="fire/loss" name="fire/loss"
+                                                            placeholder="cause of fire/loss"><br>
+                                                        <h3> <label for="email">ITEMS OF POLICY AFFECTED(give
+                                                                discription):
+                                                            </label></h3>
+                                                        <input type="text" id="policy" name="give discription"
+                                                            placeholder="items of policy affected"><br>
+                                                        <h3> <label>OCCUPATION OF THE PREMISES AT THE TIME
+                                                                OF FIRE/LOSS :
+                                                            </label></h3>
+                                                        <input type="text" id="ref no" name="OCCUPATION"
+                                                            placeholder="occupation****loss"><br><br>
+                                                    <div class="row">
+                                                        <div style="margin-left: 9px;"></div>
+                                                            <div class="column">
+                                                                <h3> <label for="email">HAS THE FIRE/LOSS BEEN REPORTED
+                                                                        POLICE?
+                                                                    </label></h3>
+                                                            </div>
+                                                            <div style="margin-left: 50px;"></div>
+                                                            <div class="column">
+                                                                <input type="radio" id="YES" name="REPORTED"
+                                                                    value="YES">
+                                                                <label for="male">YES</label>
+                                                                <input type="radio" id="NO" name="REPORTED" value="YES">
+                                                                <label for="NO">NO</label>
 
+                                                            </div><br>
 
-                                                        <h3>
-                                                            <p class="moto-text_system_8">*BANK ACCOUNT DETAILS*</p>
-                                                        </h3>
+                                                        </div>
+                                                        <h3> <label>if not,give reasons:</label></h3>
+                                                        <input type="text" id="REASONS" name="reasons"
+                                                            placeholder="reasons"><br>
+                                                        <h3> <label for="email">ADDRESS WHERE THE LOSS CAN BE INSPECTED:
+                                                            </label></h3>
+                                                        <input type="text" id="" name="give discription"
+                                                            placeholder="address by inspected"><br>
+                                                        <h3> <label>EXTENT OF LOSS(Perticularly described in the statement overleaf):</label></h3>
+                                                        <input type="text" id="" name="extent loss"
+                                                            placeholder="statement overlefa"><br>
+                                                        <h3> <label for="email">ANY ADDITIONAL INFORMATION PROCESSING OF CLAIM:</label></h3>
+                                                        <input type="text" id="ref no" name="give discription"
+                                                            placeholder="additional information"><br><br>
+                                                             <h3><p class="moto-text_system_8">*CONSENT FOR MODE OF CLAIM  PAYMENT*</p> </h3>
 
-                                                        <h3> <label for="name">NAME OF BANK ACCOUNT HOLDER:</label>
+                                                        <h3> <label for="name">NAME OF INSURED:</label>
                                                         </h3>
                                                         <input type="text" id="name" name="name"
                                                             placeholder="Your bank account number">
 
                                                         <div class="row">
                                                             <div class="column">
-                                                                <h3><label for="name">NAME OF BANK:</label></h3>
+                                                                <h3><label for="name">POLICY NUMBER:</label></h3>
                                                                 <input type="text" id="name" name="name"
                                                                     placeholder="Your BANK NAME"
                                                                     style="margin-left:8px;">
                                                             </div>
                                                             <div style="margin-right: 100px;"></div>
                                                             <div class="column">
-                                                                <h3><label for="name">BRANCH:</label></h3>
+                                                                <h3><label for="name">CLAIM NUMBER:</label></h3>
                                                                 <input type="text" id="name" name="name"
                                                                     placeholder="Your  BRANCH NAME">
                                                             </div>
-                                                            <div style="margin-right: 100px;"></div>
-
-                                                            <div class="column">
-                                                                <h3> <label for="name">IFSC CODE:</label></h3>
-                                                                <input type="text" id="name" name="name"
-                                                                    placeholder="11 CHARACHTER CODE APPEEARING ON YOUR CHEQUE LEAF">
-                                                            </div>
-                                                            <div style="margin-right: 100px;"></div>
-                                                        </div>
-                                                        <br>
-                                                        <h3>
-                                                            <p class="moto-text_system_8">*PAYMENT DETAILS*</p>
-                                                        </h3><br>
+                                                        </div><br>
+                                                        <h3> <label for="name">BENEFICIARY NAME:</label>
+                                                        </h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="Your bank account number"><br><br>
                                                         <div class="row">
+                                                            <div style="margin-left: 8px;"></div>
                                                             <div class="column">
-                                                                <h3> <label for="name">CHEQUE NUMBER:</label></h3>
+                                                                <h3> <label for="email">MODE OF PAYMENT
+                                                                    </label></h3>
+                                                            </div>
+                                                            <div style="margin-left: 50px;"></div>
+                                                            <div class="column">
+                                                                <input type="radio" id="CHEQUE" name="PAYMENT"
+                                                                    value="FUND TRANSFER">
+                                                                <label for="male">CHEQUE</label>
+                                                                <input type="radio" id="NO" name="PAYMENT"
+                                                                    value="FUND TRANSFER">
+                                                                <label for="female">FUND TRANSFER</label>
+                                                            </div>
+                                                        </div><br>
+                                                        <h3> All Feilds are Mandatory in case of Fund Transfer:</h3>
+                                                        <h3> <label for="name">INSURED'S NAME AS PER BANK ACCOUNT:</label>
+                                                        </h3>
+                                                        <input type="text" id="name" name="name"
+                                                            placeholder="Your bank account name"><br><br>
+                                                            <div class="row">
+                                                                <div class="column">
+                                                            <h3> <label for="name">BANK ACCOUNT NUMBER:</label></h3>
+                                                            <input type="number" id="number" name="cheque number"
+                                                                placeholder="******"
+                                                                style="margin-left:8px;  width: 220px;"> 
+                                                                </div>
+                                                                <div style="margin-right: 100px;"></div>
+                                                                <div class="column">
+                                                                <h3> <label for="name">BRANCH NAME:</label></h3>
                                                                 <input type="number" id="number" name="cheque number"
-                                                                    placeholder="******" min="10" max="100"
+                                                                    placeholder="******"
                                                                     style="margin-left:8px;  width: 220px;">
+                                                                    </div>
+                                                                    <div style="margin-right: 100px;"></div>
+                                                                    <div class="column">
+                                                                     <h3><label>IFSC CODE:</label></h3>
+                                                                    <input type="text" id="" name="IFSC code"
+                                                                        placeholder="******"
+                                                                        style="margin-left:8px;  width: 220px;">
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="column">
+                                                                        <h3> <label>EMAIL:</label></h3>
+                                                                        <input type="text" id="email" name="email"
+                                                                            placeholder="Your email address"
+                                                                            style="width: 500px;">
+                                                                            </div>
+                                                                            <div style="margin-left: 100px;"></div>
+                                                                            <div class="column">
+                                                                                <h3> <label>Attachments
+                                                                                </label></h3>  
+                                                                            </div>
+                                                                            <div class="column">
+                                                                                <input type="radio" id="YES" name="REPORTED"
+                                                                                    value="YES">
+                                                                                <label>CANCELLED CHEQUE</label><br>
+                                                                                <input type="radio" id="NO" name="REPORTED" value="YES">
+                                                                                <label>BANK PASSBOOK COPY</label>
+                
+                                                                            </div>
+                                                                            </div>
+                                                        
 
-                                                            </div>
-                                                            <div style="margin-right: 100px;"></div>
-                                                            <div class="column">
-                                                                <h3> <label for="name">AMOUNT: </label></h3>
-                                                                <input type="text" id="name" name="name"
-                                                                    placeholder="Your AMOUNT RUPEES"
-                                                                    style="margin-left:auto;">
-                                                            </div>
-                                                            <div style="margin-right: 100px;"></div>
-                                                            <div class="column">
-                                                                <h3> <label for="name">BANK NAME:</label></h3>
-                                                                <input type="text" id="name" name="name"
-                                                                    placeholder="Your  BRANCH NAME">
-                                                            </div>
-                                                        </div>
+                                                       
 
                                                 </div>
 
@@ -1139,7 +1213,7 @@
                                                                     <h3>DETAILS OF INSURED</h3>
                                                                     <h3> <label for="name">NAME:</label>
                                                                     </h3>
-                                                                   
+
                                                                     <input type="text" id="name" name="name"
                                                                         placeholder=" NAME">
                                                                     <div class="row">
